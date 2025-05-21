@@ -1,6 +1,7 @@
 
 import { GraduationCap, Code, BookOpen } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
 const AboutMe = () => {
   return (
@@ -9,9 +10,10 @@ const AboutMe = () => {
         <div className="flex flex-col md:flex-row items-center gap-8">
           <div className="w-full md:w-1/3 flex justify-center">
             <div className="relative w-64 h-64 rounded-full overflow-hidden border-4 border-primary shadow-xl">
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center text-white text-6xl font-bold">
-                S
-              </div>
+              <Avatar className="w-full h-full">
+                <AvatarImage src="/lovable-uploads/f80e4170-fdf3-4611-82ef-d87ba4d07ec2.png" alt="Sushmitha A" className="w-full h-full object-cover" />
+                <AvatarFallback className="text-6xl font-bold">S</AvatarFallback>
+              </Avatar>
             </div>
           </div>
           
