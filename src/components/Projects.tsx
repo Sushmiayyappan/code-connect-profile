@@ -1,7 +1,7 @@
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Github, Code, Monitor } from "lucide-react";
+import { Github, Monitor } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   Carousel,
@@ -14,39 +14,39 @@ import {
 const Projects = () => {
   const projects = [
     {
-      title: "E-Commerce Website",
-      description: "Developed a responsive e-commerce platform with product catalog, shopping cart, and payment integration using React.js and Node.js.",
-      tags: ["React", "Node.js", "MongoDB", "Express"],
+      title: "Weather App",
+      description: "Developed a responsive weather application that provides current and forecasted weather conditions based on user location or search. Implemented geolocation and weather API integration.",
+      tags: ["HTML", "CSS", "JavaScript", "API Integration"],
       links: {
-        github: "https://github.com/sushmitha-a/ecommerce",
-        demo: "https://ecommerce-demo.example.com"
+        github: "https://github.com/yourusername/weather-app",
+        demo: "https://weather-app-demo.example.com"
       }
     },
     {
-      title: "AI Image Recognition App",
-      description: "Created an image recognition application that identifies objects using machine learning algorithms and provides detailed information about detected items.",
-      tags: ["Python", "TensorFlow", "Flask", "React"],
+      title: "Task Management System",
+      description: "Created a task management application allowing users to create, organize, and track tasks with priority levels and deadlines. Implemented user authentication and data persistence.",
+      tags: ["React", "CSS", "LocalStorage", "User Authentication"],
       links: {
-        github: "https://github.com/sushmitha-a/ai-image-recognition",
-        demo: "https://ai-image.example.com"
+        github: "https://github.com/yourusername/task-manager",
+        demo: "https://task-manager-demo.example.com"
       }
     },
     {
-      title: "Smart Home IoT Dashboard",
-      description: "Built a dashboard for monitoring and controlling IoT devices in a smart home environment, with real-time data visualization.",
-      tags: ["IoT", "Arduino", "React", "MQTT"],
+      title: "Portfolio Website",
+      description: "Designed and developed a responsive personal portfolio website to showcase projects, skills, and achievements. Implemented modern UI/UX principles and optimized for performance.",
+      tags: ["HTML", "CSS", "JavaScript", "Responsive Design"],
       links: {
-        github: "https://github.com/sushmitha-a/smart-home-dashboard",
-        demo: "https://smart-home.example.com" 
+        github: "https://github.com/yourusername/portfolio",
+        demo: "https://yourusername.github.io/portfolio"
       }
     },
     {
-      title: "Personal Finance Tracker",
-      description: "Developed a personal finance application that helps users track expenses, set budgets, and visualize spending patterns with interactive charts.",
-      tags: ["JavaScript", "Chart.js", "Firebase", "Bootstrap"],
+      title: "Student Management System",
+      description: "Built a comprehensive system for managing student information, course registrations, and academic performance tracking. Implemented database integration and reporting features.",
+      tags: ["Java", "MySQL", "GUI Development", "JDBC"],
       links: {
-        github: "https://github.com/sushmitha-a/finance-tracker",
-        demo: "https://finance-tracker.example.com"
+        github: "https://github.com/yourusername/student-management",
+        demo: "#"
       }
     }
   ];
@@ -86,17 +86,19 @@ const Projects = () => {
                         Code
                       </a>
                     </Button>
-                    <Button size="sm" asChild>
-                      <a 
-                        href={project.links.demo} 
-                        target="_blank" 
-                        rel="noreferrer"
-                        className="inline-flex items-center gap-2"
-                      >
-                        <Monitor size={16} />
-                        Live Demo
-                      </a>
-                    </Button>
+                    {project.links.demo !== "#" && (
+                      <Button size="sm" asChild>
+                        <a 
+                          href={project.links.demo} 
+                          target="_blank" 
+                          rel="noreferrer"
+                          className="inline-flex items-center gap-2"
+                        >
+                          <Monitor size={16} />
+                          Live Demo
+                        </a>
+                      </Button>
+                    )}
                   </div>
                 </CardContent>
               </Card>
@@ -137,17 +139,19 @@ const Projects = () => {
                             Code
                           </a>
                         </Button>
-                        <Button size="sm" asChild>
-                          <a 
-                            href={project.links.demo} 
-                            target="_blank" 
-                            rel="noreferrer"
-                            className="inline-flex items-center gap-2"
-                          >
-                            <Monitor size={16} />
-                            Live Demo
-                          </a>
-                        </Button>
+                        {project.links.demo !== "#" && (
+                          <Button size="sm" asChild>
+                            <a 
+                              href={project.links.demo} 
+                              target="_blank" 
+                              rel="noreferrer"
+                              className="inline-flex items-center gap-2"
+                            >
+                              <Monitor size={16} />
+                              Live Demo
+                            </a>
+                          </Button>
+                        )}
                       </div>
                     </CardContent>
                   </Card>
