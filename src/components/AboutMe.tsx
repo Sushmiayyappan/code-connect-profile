@@ -11,7 +11,7 @@ const AboutMe = () => {
           <div className="w-full md:w-1/3 flex justify-center">
             <div className="relative w-64 h-64 rounded-full overflow-hidden border-4 border-primary shadow-xl">
               <Avatar className="w-full h-full">
-                <AvatarImage src="/lovable-uploads/f80e4170-fdf3-4611-82ef-d87ba4d07ec2.png" alt="Sushmitha A" className="w-full h-full object-cover" />
+                <AvatarImage src="/lovable-uploads/98c77dd6-2770-4405-bf97-e0a3f53d90d7.png" alt="Sushmitha A" className="w-full h-full object-cover" />
                 <AvatarFallback className="text-6xl font-bold">S</AvatarFallback>
               </Avatar>
             </div>
