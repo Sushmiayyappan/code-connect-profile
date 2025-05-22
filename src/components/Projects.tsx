@@ -14,38 +14,38 @@ import {
 const Projects = () => {
   const projects = [
     {
-      title: "Weather App",
-      description: "Developed a responsive weather application that provides current and forecasted weather conditions based on user location or search. Implemented geolocation and weather API integration.",
-      tags: ["HTML", "CSS", "JavaScript", "API Integration"],
+      title: "Automatic Protection and Control of DC Microgrids",
+      description: "Implemented automated protection systems for DC microgrids to efficiently reduce faults in motors and machines. Designed circuits and control algorithms to detect and mitigate electrical issues before they cause damage.",
+      tags: ["Circuit Design", "Control Systems", "Fault Detection", "DC Microgrids"],
       links: {
-        github: "https://github.com/yourusername/weather-app",
-        demo: "https://weather-app-demo.example.com"
+        github: "https://github.com/yourusername/dc-microgrid-protection",
+        demo: "#"
       }
     },
     {
-      title: "Task Management System",
-      description: "Created a task management application allowing users to create, organize, and track tasks with priority levels and deadlines. Implemented user authentication and data persistence.",
-      tags: ["React", "CSS", "LocalStorage", "User Authentication"],
+      title: "Smart Door Lock System",
+      description: "Developed a Python-based home security system featuring facial recognition using the Haar Cascade classifier. The system provides secure access control through biometric verification, enhancing home security.",
+      tags: ["Python", "OpenCV", "Facial Recognition", "Security Systems", "Haar Cascade"],
       links: {
-        github: "https://github.com/yourusername/task-manager",
-        demo: "https://task-manager-demo.example.com"
+        github: "https://github.com/yourusername/smart-door-lock",
+        demo: "#"
       }
     },
     {
-      title: "Portfolio Website",
-      description: "Designed and developed a responsive personal portfolio website to showcase projects, skills, and achievements. Implemented modern UI/UX principles and optimized for performance.",
-      tags: ["HTML", "CSS", "JavaScript", "Responsive Design"],
+      title: "Elevator Fault Surveillance and Management System",
+      description: "Created a comprehensive monitoring system for elevator faults using STM32 microcontroller integrated with vibration, pressure, and acceleration sensors. The system detects abnormalities and prevents potential failures.",
+      tags: ["STM32", "Embedded Systems", "Sensors", "IoT", "Fault Detection"],
       links: {
-        github: "https://github.com/yourusername/portfolio",
-        demo: "https://yourusername.github.io/portfolio"
+        github: "https://github.com/yourusername/elevator-monitoring",
+        demo: "#"
       }
     },
     {
-      title: "Student Management System",
-      description: "Built a comprehensive system for managing student information, course registrations, and academic performance tracking. Implemented database integration and reporting features.",
-      tags: ["Java", "MySQL", "GUI Development", "JDBC"],
+      title: "Arduino-based Bridge Flood Safety System",
+      description: "Engineered a safety system using Arduino and water-level sensors to monitor rising water levels at bridges. The system provides real-time alerts and automatically restricts pedestrian and vehicle crossing during flood conditions.",
+      tags: ["Arduino", "Sensors", "Safety Systems", "Embedded Systems", "IoT"],
       links: {
-        github: "https://github.com/yourusername/student-management",
+        github: "https://github.com/yourusername/bridge-flood-safety",
         demo: "#"
       }
     }
